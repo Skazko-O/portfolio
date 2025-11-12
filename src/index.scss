@@ -89,13 +89,13 @@ body {
 .main-profile {
   display: grid;
   grid-template-columns: 35% auto;
-  padding: 40px 125px;
+  gap:2.44rem;
+  padding: 2.5rem 0;
+  align-items: stretch; //вирівнює по висоті
 }
 
 .image-wrapper {
-  position: relative;
-  padding-right: 125px;
-  height: 580px;
+  position: relative;  
   width: 100%;
   overflow: hidden;
 
@@ -121,10 +121,36 @@ body {
 }
 
 .main-text {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   text-align: justify;
+  height: 100%;
+  overflow-y: auto;  
 
-  p {
-    padding-bottom: 50px;
+  p:not(:last-child) {
+    padding-bottom: 3.125rem;
   }
+}
+
+.universal-box {
+  border: 1px solid #9A9A9A;
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+legend {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0 1rem;
+  margin-left: 3rem ;
+}
+
+.icon {
+  width: 4.8125rem;
+  height: 4.8125rem;
+}
+
+.flex-box-icons {
+  display: flex;  
+  flex-wrap: wrap;
+  gap: 3rem;
 }
