@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+button {
+  transition: all .2s ease;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  max-width: min(90%, 2480px);
+  margin: 0 auto;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Montserrat';
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.background {
+  display: grid;
+  place-items: center;
+  background-image: url('/assets/images/backgroundImg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+}
+
+.heading {
+  display: flex;
+}
+
+.name-heading {
+  font-size: 191.179px; 
+  text-transform: uppercase;  
+}
+
+.specialisation { 
+  font-size: 44.205px;  
+}
+
+.year {
+  display: inline-block;  
+  font-size: 55.993px;
+  transform: rotate(90deg);
+  margin-left: -105px;
+}
+
+.fullName {
+  position: absolute;
+  bottom: 38px;
+  left: 60px;  
+  font-size: 44.205px;
+  
+}
