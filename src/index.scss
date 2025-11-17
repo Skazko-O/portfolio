@@ -53,7 +53,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   color: #fff;
   font-weight: 700;
@@ -210,7 +210,7 @@ legend {
 .card-back {
   background-color: #2980b9;
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding: 1rem;
   transform: rotateY(180deg);
   display: flex;
@@ -219,7 +219,11 @@ legend {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1480px) {
+  .name-heading {
+    font-size: 6rem;
+  }
+
   .name-heading {
     font-size: 6rem;
   }
@@ -236,8 +240,11 @@ legend {
   .fullName {
     font-size: 2rem;
   }
+}
 
-  .main-text {
+@media (max-width: 768px) {
+
+   .main-text {
     font-size: clamp(1.1rem, 4vw, 1.4rem);
     text-align: left;
 
@@ -246,23 +253,15 @@ legend {
     }
   }
 
-  .skills {
-    font-size: 1.5rem;
-    text-align: left;
+  .flex-box-icons {
+    justify-content: space-around;
   }
-
-  .card-back {
-    font-size: 0.6rem;
-  }
-}
-
-@media (max-width: 480px) {
 
   .main-profile {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.44rem;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     align-items: stretch;
   }
 
@@ -287,5 +286,19 @@ legend {
 
   .fullName {
     font-size: 1.5rem;
+    left: 2rem;
+    bottom: 2rem;
+  }
+
+   .skills {
+    font-size: 1.2rem;   
+  }
+
+  legend {
+    margin-left: 1rem;
+  }
+
+  .card-back {
+    font-size: 1rem;
   }
 }

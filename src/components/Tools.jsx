@@ -15,7 +15,7 @@ export default function Tools() {
             <div className="flex-box-icons">
                 {icons.map((name) => (
                     <svg className="icon" key={name}>
-                        <use xlinkHref={`/assets/images/sprite.svg#${name}`} />
+                        <use xlinkHref={`assets/images/sprite.svg#${name}`} />
                     </svg>
                 ))}
             </div>
