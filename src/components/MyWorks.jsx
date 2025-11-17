@@ -14,7 +14,7 @@ export default function MyWorks() {
                                 <h3>{title}</h3>
                                 <p>{description}</p>
                                 <a href={link} target="_blank" rel="noopener noreferrer">
-                                    Переглянути
+                                    Review
                                 </a>
                             </div>
                         </div>
